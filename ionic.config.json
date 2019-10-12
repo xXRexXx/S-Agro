@@ -1,0 +1,7 @@
+{
+  "name": "S-Agro",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

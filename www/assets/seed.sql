@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS report(id INTEGER PRIMARY KEY AUTOINCREMENT,masa TIMESTAMP,temperature INTEGER,humidity INTEGER, moisture INTEGER);
+INSERT or IGNORE INTO developer VALUES (1, '', '34', '230', '230');
+INSERT or IGNORE INTO developer VALUES (2, '', '32', '300', '230');

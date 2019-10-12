@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Sensor Report</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" padding>
+    <ion-grid>    
+      <ion-col>
+          <ion-card color="medium">
+              <ion-card-header>
+                <ion-card-subtitle class="ion-text-center">REPORTS</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                  <ion-grid>
+                      <ion-row>
+                          <ion-col size="12" size-sm>
+                            Timestamp
+                          </ion-col>
+                          <ion-col size="12" size-sm>
+                            Temperature
+                          </ion-col>
+                          <ion-col size="12" size-sm>
+                            Soil Humidity
+                          </ion-col>
+                          <ion-col size="12" size-sm>
+                            Soil Moisture
+                          </ion-col>
+                        </ion-row>
+  
+                        <ion-row *ngFor="let item of historytemperature;let i = index">
+                          <ion-col size="12" size-sm>
+                              {{historytemperature[historytemperature.length - (i + 1)].timestamp}}
+                            </ion-col>
+                            <ion-col size="12" size-sm>
+                                {{historytemperature[historytemperature.length - (i + 1)].level}}
+                            </ion-col>
+                            <ion-col size="12" size-sm>
+                                {{historytemperature[historytemperature.length - (i + 1)].level1}}
+                            </ion-col>
+                            <ion-col size="12" size-sm>
+                                {{historytemperature[historytemperature.length - (i + 1)].level2}}
+                            </ion-col>
+                        </ion-row>
+                  </ion-grid>
+              </ion-card-content>
+            </ion-card>
+        </ion-col>
+      </ion-grid>
+</ion-content>
